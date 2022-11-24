@@ -9,7 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('maicol18@gmail.com');
   const [pass, setPass] = useState('123456');
   const [modoRegistro, setModoRegistro] = useState(true);
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   const navigate = useNavigate();
 
   const guardarDatos = (e) => {
