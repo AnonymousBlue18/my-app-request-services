@@ -6,10 +6,10 @@ import Ocho from '../images/8.gif';
 const Login = () => {
 
   //hooks
-  const [email, setEmail] = useState('maicol18@gmail.com');
-  const [pass, setPass] = useState('123456');
+  const [email, setEmail] = useState('');
+  const [pass, setPass] = useState('');
   const [modoRegistro, setModoRegistro] = useState(true);
-  const [setError] = useState(null);
+  //const [error, setError] = useState(null);
   const navigate = useNavigate();
 
   const guardarDatos = (e) => {
@@ -42,7 +42,7 @@ const Login = () => {
       return
     }
 
-    setError(null);
+    //setError(null);
 
     if (modoRegistro) {
       registrar();
@@ -76,7 +76,7 @@ const Login = () => {
 
       setEmail('')
       setPass('')
-      setError('')
+      //setError('')
       navigate('/admin')
 
     } catch (error) {
@@ -122,7 +122,7 @@ const Login = () => {
 
       setEmail('')
       setPass('')
-      setError(null)
+      //setError(null)
 
     } catch (error) {
       console.log(error.code);
